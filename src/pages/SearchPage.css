@@ -1,0 +1,125 @@
+.searchPage {
+  /* border: 1px solid red; */
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.searchPage__header {
+  position: sticky;
+  padding: 30px;
+  z-index: 1;
+  border-bottom: 1px solid lightgray;
+}
+
+.searchPage__headerTop {
+  display: flex;
+  background-color: white;
+}
+
+.searchPage__headerBody {
+  margin-left: 5%;
+}
+
+.searchPage__headerBody > .search > .search__input {
+  margin: unset;
+  max-width: 500px;
+  /* margin-left: 5%; */
+}
+
+.searchPage__header .google__logo {
+  object-fit: contain;
+  width: auto;
+  height: 50px;
+  /* border: 1px solid green; */
+}
+.searchPage__options {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px solid red; */
+}
+
+.searchPage__optionsLeft,
+.searchPage__optionsRight {
+  display: flex;
+}
+
+.searchPage__optionsRight {
+  margin-left: 80px;
+}
+.searchPage__option {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+/* Responsiveness */
+@media (max-width: 500px) {
+  .google__logo {
+    /* border: 1px solid red; */
+  }
+  .searchPage__headerBody {
+    /* background-color: blue; */
+  }
+  .searchPage__headerBody > .search > .search__input {
+    max-width: 200px;
+    /* border: 2px solid red; */
+  }
+  .search__input input {
+    max-width: 100px;
+  }
+
+  .searchPage__options {
+    flex: 1;
+    margin-top: 5%;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: left;
+    width: unset;
+    max-width: 98%;
+  }
+}
+.searchPage__resultsCount {
+  color: gray;
+}
+
+.searchPage__results {
+  max-width: 74%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchPage__result {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchPage__resultpreview {
+  color: #212529;
+}
+
+.searchPage__resultTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4361ee;
+}
+.searchPage__resultTitle:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.searchPage__resultSnipper {
+  color: #343a40;
+}

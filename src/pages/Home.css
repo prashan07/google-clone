@@ -1,0 +1,63 @@
+.home {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+.home__header a:hover {
+  text-decoration: underline;
+}
+
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  /* border: 2px solid red; */
+}
+
+.home__header a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0.87);
+  font-size: 15px;
+}
+
+.home_header a:hover {
+  text-decoration: underline;
+}
+
+.home__headerLeft {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+.home__headerRight {
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+}
+
+.home__headerRight > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.home__body {
+  display: flex;
+  /* border: 2px solid purple; */
+  flex-direction: column;
+  margin-top: 5%;
+  flex: 1;
+}
+
+.google__logo {
+  /* border: 2px solid orange; */
+  object-fit: contain;
+  min-width: 4vw;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+}
